@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Diabetic Retinopathy Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*">
+      <button type="submit">Predict</button>
+    </form>
+    <p>You are predicted to have </p>
+    <h3 style="color: black; background-color: aqua;">{{pred_level}}</h3>
+{% endblock %}
+{% block scripts %}{% endblock %}
+
+

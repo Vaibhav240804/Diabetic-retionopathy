@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmers community</title>
+    <link rel="stylesheet" href="./farmer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tillana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="min-height: 100vh; min-width: 100vw;">
+    <button
+      class="toggle-mobile-nav"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+      <img src="./imgs/menu.svg" alt="open-menu" class="open-menu" />
+    </button>
+    <nav>
+      <ul class="navbar primary-nav" data-visible="false">
+        <li>
+          <a href="#profile">Profile</a
+          ><span class="tooltip">Your profile</span>
+        </li>
+        <li>
+          <a href="#Weather">Weather</a
+          ><span class="tooltip">Know about weather forecast in your area</span>
+        </li>
+        <li>
+          <a href="#market">Market</a
+          ><span class="tooltip">List your fresh crop on our market</span>
+        </li>
+        <li>
+          <a href="#Technology" id="">Technology</a
+          ><span class="tooltip"
+            >Get updates about latest agricultural technology</span
+          >
+        </li>
+        <li>
+          <a href="#schemes" id="">Goverement Schemes</a
+          ><span class="tooltip">Know about Goverement Schemes available</span>
+        </li>
+      </ul>
+    </nav>
+    <section id="profile">
+      <div class="profile">
+        <img src="https://d3nn873nee648n.cloudfront.net/900x600/14961/17-SM579221.jpg" alt="Profile Picture" />
+        <h1>Pranav singh</h1>
+        <p>
+          This is profile of an farmer who is part of largest online farmer
+          community
+        </p>
+      </div>
+    </section>
+    <section id="Weather">
+      <div class="container">
+        <h1>Plan your farming schedule with the help of weather predictions</h1>
+        <div class="current-weather">
+          <img src="https://svgsilh.com/svg/1265201.svg" width="50px" height="50px"alt="Weather Icon" />
+          <div>
+            <h2>City Name</h2>
+            <p>Temperature: 20°C</p>
+            <p>Humidity: 50%</p>
+            <p>Wind Speed: 10 km/h</p>
+            <p>Precipitation: 0%</p>
+          </div>
+        </div>
+        <h1>Weather Forecast</h1>
+        <div class="forecast">
+          <div class="day">
+            <h3>Today</h3>
+            <img src="https://svgsilh.com/svg/1265201.svg" width="50px" height="50px" alt="Weather Icon" />
+            <p>Temperature: 20°C</p>
+            <p>Humidity: 50%</p>
+            <p>Wind Speed: 10 km/h</p>
+            <p>Precipitation: 0%</p>
+          </div>
+          <div class="day">
+            <h3>Tomorrow</h3>
+            <img src="https://static.thenounproject.com/png/4142740-200.png" width="50px" height="50px" alt="Weather Icon" />
+            <p>Temperature: 22°C</p>
+            <p>Humidity: 45%</p>
+            <p>Wind Speed: 12 km/h</p>
+            <p>Precipitation: 10%</p>
+          </div>
+          <div class="day">
+            <h3>Day After Tomorrow</h3>
+            <img src="https://static.thenounproject.com/png/4142740-200.png" width="50px" height="50px"  />
+            <p>Temperature: 18°C</p>
+            <p>Humidity: 55%</p>
+            <p>Wind Speed: 15 km/h</p>
+            <p>Prec</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="market">
+      <form>
+        <h1>List Your Items for Sale</h1>
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" name="item-name" required />
+        <label for="item-description">Item Description:</label>
+        <textarea
+          id="item-description"
+          name="item-description"
+          rows="4"
+          required
+        ></textarea>
+        <label for="item-category">Item Category:</label>
+        <select id="item-category" name="item-category" required>
+          <option value="">--Select Category--</option>
+          <option value="fruits">Fruits</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="dairy">Dairy</option>
+          <option value="meat">Meat</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="item-quantity">Item Quantity:</label>
+        <input type="number" id="item-quantity" name="item-quantity" required />
+        <label for="item-price">Item Price:</label>
+        <input type="number" id="item-price" name="item-price" required />
+        <label for="item-image">Item Image:</label>
+        <input type="file" id="item-image" name="item-image" accept="image/*" />
+        <button type="submit">List Item</button>
+      </form>
+    </section>
+    <section id="Technology">
+      <h1>New Technology for Farmers</h1>
+      <p>
+        As technology advances, farmers can benefit from new tools and equipment
+        that can help them work more efficiently and effectively. Here are some
+        of the latest technology items that can benefit farmers:
+      </p>
+      <ul>
+        <li class="tech-cards">
+          <img
+            class="left-slide"
+            src="https://ik.imagekit.io/equinoxsdrones/blog/img/application-of-drone-technology-in-crop-fertilization/drone_spray_3BvCHH6O5JYR.jpg?tr=w-1080,h-566,fo-auto"
+            alt="Drone crop sprayer"
+          />
+          <div class="container-tech-cards right-slide">
+            <h2>Drone Crop Sprayer</h2>
+            <p>
+              A drone crop sprayer is a remotely operated drone that can spray
+              crops with pesticides, herbicides, or fertilizers. This can help
+              farmers save time and reduce waste by targeting specific areas of
+              their fields and reducing the amount of chemicals needed.
+            </p>
+            <button><a href="#">Know more</a></button>
+          </div>
+        </li>
+        <li class="tech-cards">
+          <img
+            class="left-slide"
+            src="https://media.istockphoto.com/id/1177255474/photo/smart-garden.jpg?s=612x612&w=0&k=20&c=3B1yQsePzckB0dF4JG0Htk8Dc_oUv0PRObKm1V-VFwY="
+            alt="Smart irrigation controller"
+          />
+          <div class="container-tech-cards right-slide">
+            <h2>Smart Irrigation Controller</h2>
+            <p>
+              A smart irrigation controller is a device that can automatically
+              adjust watering schedules based on weather conditions, soil
+              moisture levels, and other factors. This can help farmers conserve
+              water and ensure that their crops are getting the right amount of
+              hydration.
+            </p>
+            <button><a href="#">Know more</a></button>
+          </div>
+        </li>
+        <li class="tech-cards">
+          <img
+            class="left-slide"
+            src="https://www.sensoterra.com/uploads/news/1909/IMG_20160621_152214.jpg"
+            alt="Soil sensor system"
+          />
+          <div class="container-tech-cards right-slide">
+            <h2>Soil Sensor System</h2>
+            <p>
+              A soil sensor system can monitor soil moisture, temperature, and
+              nutrient levels in real time. This can help farmers optimize their
+              use of fertilizers, reduce water waste, and improve crop yields.
+            </p>
+            <button><a href="#">Know more</a></button>
+          </div>
+        </li>
+      </ul>
+      <p>
+        By using these and other new technology items, farmers can increase
+        productivity, reduce costs, and improve the overall efficiency of their
+        operations.
+      </p>
+    </section>
+    <section id="schemes">
+      <h2>
+        "Unlock the benefits of government schemes and transform your farming
+        journey today!"
+      </h2>
+      <ul>
+        <li class="schemes-cards">
+          <img
+            src="https://sarkariyojana.com/wp-content/uploads/2020/01/pradhanmantri-fasal-bima-yojana.png"
+            alt=""
+            class="img-scheme left-slide"
+          />
+          <div class="container-scheme right-slide">
+            <h1 class="heading-sheme">
+              Pradhan Mantri Fasal Bima Yojana (PMFBY)
+            </h1>
+            <p class="desc-scheme">
+              This scheme provides insurance coverage and financial support to
+              farmers in case of crop failure due to natural calamities, pests,
+              or diseases.
+            </p>
+            <button class="know-more"><a href="#" >Know more</a></button>
+          </div>
+        </li>
+        <li class="schemes-cards">
+          <img
+            src="https://agriculturehindi.com/wp-content/uploads/2021/07/Pradhan-Mantri-Krishi-Sinchai-Yo-1.png"
+            alt=""
+            class="img-scheme"
+          />
+          <div class="container-scheme right-slide">
+            <h1 class="heading-sheme">
+              Pradhan Mantri Krishi Sinchai Yojana (PMKSY)
+            </h1>
+            <p class="desc-scheme">
+              This scheme aims to improve the irrigation facilities in the
+              country, increase the area under irrigation, and enhance water use
+              efficiency. It covers the construction of new water sources,
+              repair and renovation of traditional water bodies, and
+              distribution network.
+            </p>
+            <button class="know-more"><a href="#" >Know more</a></button>
+          </div>
+        </li>
+        <li class="schemes-cards">
+          <img
+            src="https://digitallockerfaq.in/wp-content/uploads/2018/10/Soil-Health-Card-Scheme-e1539603016280.jpg"
+            alt=""
+            class="img-scheme left-slide"
+          />
+          <div class="container-scheme right-slide">
+            <h1 class="heading-sheme">Soil Health Card Scheme</h1>
+            <p class="desc-scheme">
+              This scheme provides farmers with soil health cards that contain
+              important information about the nutrient status of their soil. It
+              helps farmers make informed decisions about the type and quantity
+              of fertilizers and other inputs required for their crops.
+            </p>
+            <button class="know-more"><a href="#" >Know more</a></button>
+          </div>
+        </li>
+        <li class="schemes-cards">
+          <img
+            src="https://pmmodiyojana.in/wp-content/uploads/2022/10/image-197.png"
+            alt=""
+            class="img-scheme left-slide"
+          />
+          <div class="container-scheme right-slide">
+            <h1 class="heading-sheme">
+              Pradhan Mantri Kisan Samman Nidhi Yojana (PM-KISAN)
+            </h1>
+            <p class="desc-scheme">
+              Under this scheme, farmers with less than 2 hectares of land
+              receive financial assistance of Rs. 6000 per year in three
+              installments directly to their bank accounts. The scheme aims to
+              provide financial support to farmers and improve their
+              livelihoods.
+            </p>
+            <button class="know-more"><a href="#" >Know more</a></button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer id="foo"
+      <p>&copy; 2023 Farmers' Community. All rights reserved.</p>
+      <ul class="contact">
+        <li class="contact-cont">
+            <p>Address:Mumbai</p>
+            <p>Contact number:10001</p>
+         </li>
+        <li class="contact-cont">
+            <p>Address:Mumbai</p>
+            <p>Contact number:10001</p>
+        </li>
+        <li class="contact-cont">
+            <p>Address:Mumbai</p>
+            <p>Contact number:10001</p>
+        </li>
+        <li class="contact-cont">
+            <p>Follow us on Social media</p>
+            <button><img src="" alt=""><a href=""></a></button>
+            <button><img src="" alt=""><a href=""></a></button>
+        </li>
+      </ul>
+    </footer>
+
+    <script>
+      const rightSliders = document.querySelectorAll(".right-slide");
+      const leftSliders = document.querySelectorAll(".left-slide");
+      rightSliders.forEach((element, index) => {
+        console.log(element + "with index:" + index);
+        const element_width = element.getBoundingClientRect().width;
+        const element_hight = element.getBoundingClientRect().height;
+        element.style.left =
+          document.body.getBoundingClientRect().width / 2 -
+          element_width / 2 +
+          "px";
+        element.style.top =
+          (leftSliders[0].getBoundingClientRect().height * (index * 2 + 1)) /
+            2 -
+          element_hight / 2 +
+          "px";
+        console.log(
+          (leftSliders[0].getBoundingClientRect().height * (index * 2 + 1)) /
+            2 -
+            element_hight / 2
+        );
+      });
+      const option = {
+        threshold: 0.1,
+        // rootMargin:''
+      };
+      const intersection_observer = new IntersectionObserver(function (
+        entries,
+        intersection_observer
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add("slide");
+          }
+        });
+      },
+      option);
+
+      rightSliders.forEach((right) => {
+        intersection_observer.observe(right);
+      });
+      leftSliders.forEach((left) => {
+        intersection_observer.observe(left);
+      });
+      let device_width = (document.body.getBoundingClientRect().width =
+        document.body.querySelector(".primary-nav"));
+      let nav = document.body.querySelector(".primary-nav");
+      // if(device_width<=625+'px'){
+      //     nav.setAttribute('data-visible','false');
+      // }
+      // else if(device_width>625+'px' && nav.getAttribute('data-visible') == 'false'){
+      //     nav.setAttribute('data-visible','true')
+      // }
+      const navToggle = document.querySelector(".toggle-mobile-nav");
+      navToggle.addEventListener("click", () => {
+        const visibility = nav.getAttribute("data-visible");
+        if (visibility == "false") {
+          nav.setAttribute("data-visible", "true");
+
+          navToggle.setAttribute("aria-expanded", true);
+        } else {
+          nav.setAttribute("data-visible", "false");
+          navToggle.setAttribute("aria-expanded", false);
+        }
+      });
+    </script>
+  </body>
+</html>

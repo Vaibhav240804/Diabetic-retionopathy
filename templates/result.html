@@ -1,0 +1,43 @@
+<!-- {% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>Image Classification Results</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Prediction Probabilities</h3>
+      <ul class="list-group">
+        {% for i in range(classes|length) %}
+        <li class="list-group-item">{{ classes[i] }}: {{ pred_proba[i] }}%</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3>Prediction Plot</h3>
+      <div id="plot"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+  // create the plot using the plotly library
+  var data = [{
+    type: 'pie',
+    values: [{% for item in plot_data %}{{ item.value }},{% endfor %}],
+    labels: [{% for item in plot_data %}"{{ item.name }}",{% endfor %}],
+    textinfo: 'label+percent',
+    marker: {
+      colors: [{% for item in plot_data %}"{{ item.color }}",{% endfor %}]
+    },
+    hole: .4,
+    hoverinfo: 'skip'
+  }];
+  var layout = {
+    height: 400,
+    width: 400,
+    showlegend: false
+  };
+  Plotly.newPlot('plot', data, layout);
+</script>
+{% endblock %} -->

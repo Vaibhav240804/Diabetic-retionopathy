@@ -1,0 +1,29 @@
+# Ignore files with .h5 extension
+*.h5
+# Virtual Environment
+venv/
+env/
+.venv/
+pipfile.lock
+Pipfile.lock
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+Lib/site-packages/
+
+# Local development files
+instance/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.iml
+
+# Other miscellaneous files
+.DS_Store
+*.swp

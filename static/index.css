@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Tillana', cursive;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/NOLs-Hero5-iStock-1201829626-cropped.jpg?crop=0%2C0%2C3624%2C1993&wid=4000&hei=2200&scl=0.906);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.welcome{
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight:bolder;
+    width: 70%;
+}
+#greeting > h1{
+    color: rgb(76, 76, 170);
+    
+}
+#greetingline::after{
+    content: '';
+    background-color: brown;
+    height: 3px;
+    width: 0;
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#greeting >h1:hover{
+    color: rgb(52, 177, 186);
+}
+#greetingline:hover::after{
+    width: 100%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.links{
+    text-decoration: none;
+    padding: 1em;
+    width: 70%;
+    font-size: 28px;
+    color: rgb(220, 73, 19);
+    border: 3px solid rgb(118, 37, 7);
+    background-color: rgb(241, 150, 117);
+    border-radius: 5px;
+    box-shadow: 3px 5px;
+    font-weight: bolder;
+}
+.links:hover{
+    color: rgb(125, 31, 31);
+}
+.links::after{
+    content: '';
+    background-color: brown;
+    height: 3px;
+    width: 0;
+    display: block;
+    position: relative;
+    left: 1em;
+    bottom: 0;
+    transition: 0.3s;
+}
+.links{
+    width: max-content;
+}
+.links:hover::after{
+    width: 80%;
+}
+
+@media (max-width:500px) {
+    body{
+        background: url(https://d3nn873nee648n.cloudfront.net/900x600/19235/14-SM907936.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container{
+        gap: 2em;
+    }
+    #greetingline{
+        font-size: 18px;
+    }
+    .links{
+        font-size: 15px;
+    }
+}
