@@ -15,13 +15,18 @@ from PIL import Image
 import cv2
 import io
 import os
-
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
+load_dotenv()
+
 app.secret_key = 'mysecretkey'
 
-client = MongoClient("mongodb+srv://<username>:<password>@cluster0.blfucek.mongodb.net/?retryWrites=true&w=majority")
+MongoURI = os.environ.get('MongoURI')
+print(MongoURI)
+
+client = MongoClient(MongoURI)
 
 db = client["first"]
 users = db["users"]

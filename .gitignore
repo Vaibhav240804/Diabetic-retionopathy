@@ -23,6 +23,7 @@ instance/
 .vscode/
 .idea/
 *.iml
+.env
 
 # Other miscellaneous files
 .DS_Store
