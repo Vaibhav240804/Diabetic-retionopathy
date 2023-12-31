@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 app.secret_key = 'mysecretkey'
 
-client = MongoClient("mongodb+srv://vkore241:Mumbai#123@cluster0.blfucek.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://<username>:<password>@cluster0.blfucek.mongodb.net/?retryWrites=true&w=majority")
 
 db = client["first"]
 users = db["users"]
